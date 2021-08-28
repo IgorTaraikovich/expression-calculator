@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "colors": "^1.4.0",
+    "mathjs": "^9.4.4",
     "semver": "^6.3.0"
   }
 }
