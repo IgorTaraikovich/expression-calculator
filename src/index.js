@@ -1,5 +1,3 @@
-const { evaluate } = require('mathjs');
-
 function eval() {
     // Do not use eval!!!
     return;
@@ -20,7 +18,7 @@ function expressionCalculator(expr) {
     if (RightBrackets !== LeftBrackets) throw 'ExpressionError: Brackets must be paired';
     
     
-    return evaluate(expr);
+    return (new Function(`return ${expr}`)());
     
 
     
